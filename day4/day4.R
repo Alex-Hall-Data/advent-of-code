@@ -42,7 +42,7 @@ for (current_minute in (seq(0,59))){
 minute_counter <- minute_counter %>%
   arrange(desc(counts))
 
-as.numeric(top_guard) * minute_counter$counts[1]
+as.numeric(top_guard) * minute_counter$minute[1]
 
 
 
